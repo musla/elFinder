@@ -322,6 +322,7 @@ $opts = array(
 		// 		
 		// 	)
 		// ),
+		/*
 		array(
 			'driver' => 'FTP',
 			'host' => 'work.std42.ru',
@@ -330,6 +331,7 @@ $opts = array(
 			'path' => '/',
 			'tmpPath' => '../files/ftp',
 		),
+		*/
 		// array(
 		// 	'driver' => 'FTP',
 		// 	'host' => '10.0.1.3',
