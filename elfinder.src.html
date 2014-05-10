@@ -3,28 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>elFinder 2.x source version with PHP connector</title>
-	<!-- 
-	<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
-	-->
 
-	<!-- <script src="jquery/jquery-1.8.1.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+	<!-- jquery ui -->
 	<script src="jquery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-	
-	<!-- <script src="jquery/jquery-ui-1.8.21.custom.min.js"></script> -->
-	<!-- <script src="jquery/jquery-ui-1.8.23.custom.min.js" type="text/javascript" charset="utf-8"></script> -->
-	<!-- <link rel="stylesheet" href="jquery/ui-themes/smoothness/jquery-ui-1.8.23.custom.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
-	
-	<!--	
 	<script src="jquery/jquery-ui-1.10.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" href="jquery/ui-themes/smoothness/jquery-ui-1.10.1.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	<!-- custom jquery ui theme -->
+	<link rel="stylesheet" href="jquery/ui-themes/custom/jquery-ui-1.10.1.custom.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	<!-- custom elfinder bootstrap-like theme -->
+	<link rel="stylesheet" href="css/theme-custom.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	<!-- elfinder default dimensions
+	<style>.elfinder { width: 1120px !important; height: 600px !important; margin: 0 auto; }</style>
 	-->
 
-
-
-
-	<!-- <link rel="stylesheet" href="jquery/ui-themes/smoothness/jquery-ui-1.8.21.custom.css" type="text/css"> -->
-
-	
+	<!-- styles
 	<link rel="stylesheet" href="css/common.css"      type="text/css">
 	<link rel="stylesheet" href="css/dialog.css"      type="text/css">
 	<link rel="stylesheet" href="css/toolbar.css"     type="text/css">
@@ -37,6 +32,10 @@
 
 	<link rel="stylesheet" href="css/fonts.css"       type="text/css">
 	<link rel="stylesheet" href="css/theme.css"       type="text/css">
+	-->
+
+	
+
 
 	<!-- elfinder core -->
 	<script src="js/elFinder.js"></script>
@@ -97,7 +96,11 @@
 	<script src="js/commands/sort.js"></script>	
 	<script src="js/commands/netmount.js"></script>	
 
-	<!-- elfinder languages -->
+
+
+	<script src="js/i18n/elfinder.en.js"></script>
+
+	<!-- languages
 	<script src="js/i18n/elfinder.ar.js"></script>
 	<script src="js/i18n/elfinder.bg.js"></script>
 	<script src="js/i18n/elfinder.ca.js"></script>
@@ -123,6 +126,7 @@
 	<script src="js/i18n/elfinder.zh_CN.js"></script>
 	<script src="js/i18n/elfinder.zh_TW.js"></script>
 	<script src="js/i18n/elfinder.vi.js"></script>
+	-->
 
 	<!-- elfinder dialog -->
 	<script src="js/jquery.dialogelfinder.js"></script>
@@ -132,16 +136,6 @@
 
 	<!-- elfinder custom extenstions -->
 	<script src="extensions/jplayer/elfinder.quicklook.jplayer.js"></script>
-
-	<!-- tomas: twitter bootstrap -->
-	<link rel="stylesheet" href="jquery/ui-themes/bootstrap/css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="jquery/ui-themes/bootstrap/css/bootstrap-responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<script src="jquery/ui-themes/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-
-	<!-- tomas: bootstrap jquery-ui -->
-	<script src="jquery/jquery-ui-1.10.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" href="jquery/ui-themes/bootstrap/css/jquery-ui-bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
 
 	<style type="text/css">
 		body { font-family:arial, verdana, sans-serif;}
@@ -202,7 +196,7 @@
 				// },
 				// onlyMimes : ['image', 'text/plain']
 				// sync : 20000,
-				//lang : 'ru',
+				lang : 'ru',
 				customData : {answer : 42},
 				// requestType : 'POST',
 				// rememberLastDir : false,
