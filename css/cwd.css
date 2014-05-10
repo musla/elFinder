@@ -67,10 +67,10 @@
 	text-overflow:ellipsis;
     -o-text-overflow:ellipsis;
 	margin:3px 1px 0 1px;
-	padding:1px;
+	padding:0px 4px;
 	-moz-border-radius: 8px; 
 	-webkit-border-radius: 8px; 
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 /* permissions/symlink markers */

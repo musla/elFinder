@@ -7,11 +7,14 @@
 .elfinder-statusbar { 
 	text-align:center; 
 	font-weight:normal;
-	padding:.2em .5em;
+	padding: 12px;
 	
 	border-right:0 solid transparent;
 	border-bottom:0 solid transparent;
 	border-left:0 solid transparent;
+
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 
 .elfinder-statusbar a { text-decoration:none; }

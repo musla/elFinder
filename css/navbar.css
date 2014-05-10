@@ -5,7 +5,6 @@
 /* container */
 .elfinder .elfinder-navbar {
 	width:230px;
-	padding:3px 5px;
 	background-image:none;
 	border-top:0 solid;
 	border-bottom:0 solid;
@@ -16,7 +15,6 @@
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
-/*	border:1px solid #111;*/
 }
 
 
@@ -36,17 +34,16 @@
 	position:relative; 
 	display:block; 
 	white-space:nowrap;
-	padding:3px 12px;
+	padding:8px 18px;
 	margin: 0;
 	outline:0px solid;
-	border:1px solid transparent;
 	cursor:default;
 	
 }
 
 /* ltr/rtl enviroment */
-.elfinder-ltr .elfinder-navbar-dir { padding-left:35px; }
-.elfinder-rtl .elfinder-navbar-dir { padding-right:35px; }
+.elfinder-ltr .elfinder-navbar-dir { padding-left:55px; }
+.elfinder-rtl .elfinder-navbar-dir { padding-right:55px; }
 
 /* arrow before icon */
 .elfinder-navbar-arrow {
@@ -64,10 +61,10 @@
 .ui-state-active .elfinder-navbar-arrow { background-image:url("../img/arrows-active.png"); }
 
 /* collapsed/expanded arrow view */
-.elfinder-navbar-collapsed .elfinder-navbar-arrow { display:block; }
+.elfinder-navbar-collapsed .elfinder-navbar-arrow { display:block; opacity: 0.8; }
 
 /* arrow ltr/rtl enviroment */
-.elfinder-ltr .elfinder-navbar-collapsed .elfinder-navbar-arrow { background-position: 0 4px; left:0; }
+.elfinder-ltr .elfinder-navbar-collapsed .elfinder-navbar-arrow { background-position: 0 4px; left:6px; }
 .elfinder-rtl .elfinder-navbar-collapsed .elfinder-navbar-arrow { background-position: 0 -10px; right:0;  }
 .elfinder-ltr .elfinder-navbar-expanded  .elfinder-navbar-arrow,
 .elfinder-rtl .elfinder-navbar-expanded  .elfinder-navbar-arrow { background-position:0 -21px; }
@@ -75,35 +72,36 @@
 
 /* folder icon */
 .elfinder-navbar-icon {
-	width:16px;
-	height:16px;
+	width:24px;
+	height:24px;
 	position:absolute;
 	top:50%;
-	margin-top:-8px;
-	background-image:url("../img/toolbar.png");
+	margin-top:-12px;
+	background-image:url("../img/toolbar-custom.png");
 	background-repeat:no-repeat;
-	background-position:0 -16px;
+	background-position:0 -960px;
+	opacity: 0.8;
 }
 
 /* ltr/rtl enviroment */
-.elfinder-ltr .elfinder-navbar-icon { left:14px; }
-.elfinder-rtl .elfinder-navbar-icon { right:14px; }
+.elfinder-ltr .elfinder-navbar-icon { left:22px; }
+.elfinder-rtl .elfinder-navbar-icon { right:25px; }
 
 /* root folder */
-.elfinder-tree   .elfinder-navbar-root .elfinder-navbar-icon { background-position:0 0; }
+.elfinder-tree   .elfinder-navbar-root .elfinder-navbar-icon { background-position:0 -65px; }
 .elfinder-places .elfinder-navbar-root .elfinder-navbar-icon { background-position:0 -48px; }
 
 /* icon in active/hove/dropactive state */
 .ui-state-active           .elfinder-navbar-icon, 
 .elfinder-droppable-active .elfinder-navbar-icon, 
-.ui-state-hover            .elfinder-navbar-icon { background-position:0 -32px; }
+.ui-state-hover            .elfinder-navbar-icon { background-position:0 -192px; }
 
 /* subdirs tree */
 .elfinder-navbar-subtree { display:none; }
 
 /* ltr/rtl enviroment */
-.elfinder-ltr .elfinder-navbar-subtree { margin-left:12px; }
-.elfinder-rtl .elfinder-navbar-subtree { margin-right:12px; }
+.elfinder-ltr .elfinder-navbar-subtree { padding-left:12px; }
+.elfinder-rtl .elfinder-navbar-subtree { padding-right:12px; }
 
 
 /* spinner */
@@ -124,8 +122,8 @@
 .elfinder-navbar .elfinder-perms { top:50%; margin-top:-8px; }
 
 /* permissions/symlink markers ltr/rtl enviroment */
-.elfinder-ltr .elfinder-navbar .elfinder-perms   { left:  18px; }
-.elfinder-rtl .elfinder-navbar .elfinder-perms   { right: 18px; }
+.elfinder-ltr .elfinder-navbar .elfinder-perms   { left:  32px; }
+.elfinder-rtl .elfinder-navbar .elfinder-perms   { right: 32px; }
 .elfinder-ltr .elfinder-navbar .elfinder-symlink { left:  8px; }
 .elfinder-rtl .elfinder-navbar .elfinder-symlink { right: 8px; }
 

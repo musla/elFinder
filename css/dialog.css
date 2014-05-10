@@ -15,13 +15,7 @@
 	border-left:0 solid transparent;
 	border-top:0 solid transparent;
 	border-right:0 solid transparent;
-	-moz-border-radius-bottomleft: 0; 
-	-webkit-border-bottom-left-radius: 0; 
-	border-bottom-left-radius: 0; 
-	-moz-border-radius-bottomright: 0; 
-	-webkit-border-bottom-right-radius: 0; 
-	border-bottom-right-radius: 0;
-	font-weight:normal;
+	border-radius: 12px 12px 0 0;
 	padding:.2em 1em;
 }
 
@@ -32,19 +26,18 @@
 .elfinder-rtl .elfinder-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close { right:auto; left:.3em; }
 
 /* content */
-.std42-dialog .ui-dialog-content {
-	padding:.3em .5em;
+.elfinder-dialog {
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
 }
 
 /* buttons */
 .std42-dialog .ui-dialog-buttonpane {
 	border:0 solid;
 	margin:0;
-	padding:.5em .7em;
 }
 
 .std42-dialog .ui-dialog-buttonpane button { margin:0 0 0 .4em;	padding:0; outline:0px solid; }
-.std42-dialog .ui-dialog-buttonpane button span { padding:2px 9px; }
+.std42-dialog .ui-dialog-buttonpane button span { }
 
 .elfinder-dialog .ui-resizable-e, 
 .elfinder-dialog .ui-resizable-s { width:0; height:0;}
@@ -228,6 +221,8 @@
 	cursor:move;
 	position:relative;
 	text-align:left;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
 
 .elfinder-rtl .dialogelfinder-drag { text-align:right;}

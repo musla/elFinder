@@ -12,7 +12,7 @@
 	height:400px;
 	padding:10px;
 	background:#fff;
-	border:1px solid #aaa;
+
 	float:right;
 	position:relative;
 	overflow:auto;
@@ -114,7 +114,7 @@
 
 .elfinder-resize-row { margin-bottom:7px; position:relative;}
 
-.elfinder-resize-label { float:left; width:80px; padding-top: 3px; }
+.elfinder-resize-label { float:left; padding-top: 3px; }
 
 .elfinder-resize-reset {
 	width:16px;
@@ -149,11 +149,11 @@
 	margin-bottom:-11px;;
 }
 
-.elfinder-resize-row .elfinder-buttonset { float:right; }
+.elfinder-resize-row .elfinder-buttonset { float:left; }
 
 .elfinder-resize-rotate-slider {
 	float: left;
-	width: 195px;
+	width: 185px;
 	margin: 7px 7px 0;
 }
 
@@ -174,7 +174,7 @@
 
 /* fix tabs */
 .elfinder-help .ui-tabs-panel { padding:.5em; }
-.elfinder-dialog .ui-tabs .ui-tabs-nav li a { padding:.2em 1em;}
+.elfinder-dialog .ui-tabs .ui-tabs-nav li a { }
 
 .elfinder-help-shortcuts {
 	height:300px;
